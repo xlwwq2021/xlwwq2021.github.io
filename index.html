@@ -1,0 +1,105 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<title>xl2021wwq</title>  
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url("digital-7_mono.ttf"/*tpa=./digital-7_mono.ttf*/) format("truetype");
+		}
+	</style>
+	<link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<audio autoplay="autoplay" height="100" width="100">
+				<source src="renxi.mp3" type="audio/mp3" />
+				<embed height="100" width="100" src="renxi.mp3" />
+			</audio>
+			<div id="code">
+				<span class="comments">王文倩：</span><br />
+				<span class="space"><span class="comments">你好</span></span><br />
+				<span class="space"/><span class="comments">  2021年2月14日，是个特殊的日子，是情人节，也是我们相识的第一天，</span><br />
+				<span class="space"/><span class="comments"> 时光荏苒，短短的午间茶叙，不知不觉的就结束了， </span><br />
+			  <span class="space"/><span class="comments"> 说心里话，当时的我还是比较尴尬的，还有点紧张，一直喝水，吃东西，,O(∩_∩)O哈哈~</span><br />
+			  <span class="space"/><span class="comments"> 次日地约电影，幸好午后雨过天晴，不过遗憾的是，，</span><br />
+        <span class="space"/><span class="comments"> 太匆匆忙忙的了，没有吃个晚饭，就赶忙回来了，</span><br />
+        <span class="space"/><span class="comments"> 其实一方面是餐饮店不怎么样，二是怕太晚没网约车，所以最近加快练车了，</span><br />
+        <span class="space"/><span class="comments"> 说来又是幸运，去桂满陇，又是雨过天晴，哈哈，上天还是蛮眷顾我们的，</span><br />
+        <span class="space"/><span class="comments"> 虽然又是一个短暂的聚会，但我觉得很开心，当然我也做了尴尬的事情，</span><br />
+        	<span class="space"/><span class="comments"> 你为了不让我尴尬，反而使得自己尴尬了，我后来在回家的路上，才后知后觉，</span><br />
+        <span class="space"/><span class="comments"> 我也知道我们才刚刚认识，我们缺少的是更多的沟通与了解，，</span><br />
+        	<span class="space"/><span class="comments"> 当然我也会主动的去找话题，但是我还是不善交际，话题太少，更多的是一句晚安和关心，</span><br />
+        		<span class="space"/><span class="comments">我想，等我们在忙碌之后，多找点时间，多聚聚，散散心，我们会有更多的沟通和了解的，</span><br />
+        			<span class="space"/><span class="comments">(~•ω•~) 当然，后面的规划，我也在努力着，奋斗着，，，</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						王文倩, 这是我们认识的第
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						珍惜当下，不负流年！<br/>
+						<div class="signature">- 徐 柳</div>
+
+				</div>
+			</div>
+</div>
+	<div class="bg1">	
+		<div class="main">
+			<footer style="line-height:20px">
+                <div id="copyright">
+                  <p><a href='http://51bbw.cn' target="_blank"></a> 
+                    <a href="http://ymjzy.net" target="_blank"></a>
+                    <a href="" target="_blank"></a></p>
+
+                </div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together =  1613279640000;
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "提醒您：您的浏览器版本过旧^_^<br/>"+
+				"推荐使用 <a href='http://dlsw.br.baidu.com/ditui/zujian/bdBrowserSetup-5956-ftn_1000061134.exe' target='_blank'>百度浏览器<br/>请先升级您的浏览器，效果很炫哦~~"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1447721226&auto=1&height=66"></iframe>
+    
+
+
+</body>
+</html>
